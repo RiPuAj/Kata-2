@@ -1,12 +1,13 @@
 package es.ulpgc.software.Controller;
 
+import es.ulpgc.software.Model.Histogram;
 import es.ulpgc.software.Model.Title;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class TitleTypeHistogram {
+public class TitleTypeHistogram implements Histogram {
 
     private final Map<Title.TitleTypes, Long> histogram;
 
